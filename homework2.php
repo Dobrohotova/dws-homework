@@ -15,7 +15,7 @@ $zbor = '';
 
 foreach ($student as $prezime => $ime) {
 	if(strlen($prezime.$ime) > $max){
-		$zbor = $prezime.$ime;
+		$zbor = $prezime.' '.$ime;
 		$max = strlen($prezime.$ime);
 	}
 }
@@ -30,7 +30,7 @@ $zborr = '';
 
 foreach($student as $prezime => $ime){
 	if(strlen($prezime.$ime) < $maxx){
-		$zborr = $prezime.$ime;
+		$zborr = $prezime.' '.$ime;
 		$maxx = strlen($prezime.$ime);
 	}
 }
@@ -40,7 +40,7 @@ echo 'Najkratkoto ime i prezime e: '.$zborr;
 
 echo '<br/>';
 
-echo $zbor.' ima najdolgo ime i prezime so '.$max.' bukvi, a '.$zborr.' ima najkratko ime so '.$maxx.' bukvi';
+echo $zbor.' ima najdolgo ime i prezime so '.$max.' bukvi, a '.$zborr.' ima najkratko ime i prezime so '.$maxx.' bukvi';
 
 
 ?>
