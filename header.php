@@ -8,7 +8,7 @@ $predmeti = array('AdobeIllustrator', 'Komunikacija so klient', 'Adobe Photoshop
 
 <?php foreach ($predmeti as $indeks => $predmet) { ?>
 	<ul>
-		<li><a href="?strana='<?=$predmet?>'"><?=$predmet?></a></li>
+		<li><a href="?strana=<?=$predmet?>"><?=$predmet?></a></li>
 	</ul>
 <?php } ?>
 

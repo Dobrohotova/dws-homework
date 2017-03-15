@@ -3,6 +3,12 @@
 
 include 'header.php';
 
+/*if(!empty($_GET['strana']){
+	if(file_exists($_GET['strana'].'.php')){
+		include($_GET['strana'].'.php'));
+	}
+}*/
+
 switch ($_GET['strana']) {
 	case 'AdobeIllustrator':
 		include 'profesori/h3-1.php';
